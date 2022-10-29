@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 const Loading = () => {
   return (
     <>
-      <h1> Loading post...</h1>
+      <h1> Loading All page...</h1>
     </>
   );
 };
