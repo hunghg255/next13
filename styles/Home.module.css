@@ -41,8 +41,10 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  color: #fafafa;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 54px;
 }
 
 .title,
@@ -51,9 +53,11 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: 'Waterfall';
+  line-height: 54px;
 }
 
 .code {
