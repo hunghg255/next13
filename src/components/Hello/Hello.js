@@ -10,7 +10,7 @@ const Hello = () => {
   }, []);
   return (
     <>
-      <h1>Hello Hello</h1>
+      <h1 className={'title'}>Hello Nextjs 13</h1>
 
       <DatePicker />
 

@@ -2,7 +2,12 @@
   max-width: 768px;
   margin: 0 auto;
 
-
+  :global {
+    .title {
+      font-family: var(--font-waterfall);
+      color: red;
+    }
+  }
 }
 
 .wrap > div {

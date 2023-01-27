@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import dayjs from 'dayjs';
 import { cookies } from 'next/headers';
-import styles from './index.module.css';
+import styles from './index.module.scss';
 import dynamic from 'next/dynamic';
 import Hello from '../src/components/Hello/Hello';
 import { redirect } from 'next/navigation';
