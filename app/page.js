@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import Hello from '../src/components/Hello/Hello';
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
+import { usePost } from '../src/store/count';
 
 const delay = (ms) => {
   return new Promise((resolve) => {
@@ -27,6 +28,8 @@ export default async function Home() {
   const posts = await fetch('https://jsonplaceholder.typicode.com/posts').then(
     (r) => r.json()
   );
+
+  usePost.setState({ data: posts });
 
   return (
     <div className={styles.wrap}>
