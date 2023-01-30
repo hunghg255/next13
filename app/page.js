@@ -7,7 +7,8 @@ import dynamic from 'next/dynamic';
 import Hello from '../src/components/Hello/Hello';
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
-import { usePost } from '../src/store/count';
+import { usePost } from '../src/store/post';
+import StoreSyncDataFromServerToClient from '../src/store/StoreSyncDataFromServerToClient';
 
 const delay = (ms) => {
   return new Promise((resolve) => {
@@ -33,6 +34,7 @@ export default async function Home() {
 
   return (
     <div className={styles.wrap}>
+      <StoreSyncDataFromServerToClient posts={posts} />
       {/* <div>Server 121111 asdasds asds asdas asdsad</div>
 
       <Link href={'/post'} className='Link'>
