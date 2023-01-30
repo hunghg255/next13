@@ -1,4 +1,5 @@
 import React from 'react';
+import HelloClient from '../../../src/components/HelloClient/HelloClient';
 
 const Blog = async ({ params, searchParams }) => {
   console.log(params, searchParams);
@@ -9,6 +10,8 @@ const Blog = async ({ params, searchParams }) => {
   return (
     <>
       <h1>{postDetail.title}</h1>
+
+      <HelloClient title={postDetail.title} />
     </>
   );
 };
