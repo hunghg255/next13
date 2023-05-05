@@ -4,7 +4,7 @@
 
   :global {
     .title {
-      font-family: var(--font-waterfall);
+      font-family: var(--font-waterfall) !important;
       color: red;
     }
   }

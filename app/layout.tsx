@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css';
 
-import { Waterfall } from '@next/font/google';
+import { Waterfall } from 'next/font/google';
 
 const WaterfallFont = Waterfall({
   subsets: ['latin'],
@@ -9,12 +9,14 @@ const WaterfallFont = Waterfall({
 });
 
 export default function RootLayout({ children }: any) {
+
   return (
     <html lang='en'>
       <head>
         <title>Next.js</title>
       </head>
-      <body className={WaterfallFont.variable}>{children}</body>
+      <body className={WaterfallFont.variable}>{children}
+      </body>
     </html>
   );
 }

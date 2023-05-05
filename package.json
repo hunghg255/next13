@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start --port=3001",
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.0",
     "antd": "^4.23.6",
     "dayjs": "^1.11.6",
     "jotai": "^2.0.4",
