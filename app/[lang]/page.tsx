@@ -1,12 +1,25 @@
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { usePost } from '../src/store/post';
+// import { usePost } from '../src/store/post';
 import styles from './index.module.scss';
 import Hello from '@components/Hello/Hello';
+import { Locale } from 'src/i18n/i18n-config';
+import Language from '@components/Language/Language';
+import Link from 'next/link';
+import { getLocaleCommon } from 'src/i18n/locales/get-common';
 
 // export const revalidate = 60;
 
-export default async function Home() {
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}) {
+  const localeData = await getLocaleCommon(lang)
+
+  console.log(localeData);
+
+
   const nextCookies = cookies();
 
   // if (!nextCookies.get('token')) {
@@ -22,6 +35,8 @@ export default async function Home() {
   return (
     <div className={styles.wrap}>
 
+    <h1>Locale: {localeData.title}</h1>
+    <Language lang={lang} />
 
       {/* <div>Server 121111 asdasds asds asdas asdsad</div>
 
@@ -52,6 +67,8 @@ export default async function Home() {
           </div>
         );
       })} */}
+
+      <Link href={`/${lang}/about`}>About</Link>
     </div>
   );
 }

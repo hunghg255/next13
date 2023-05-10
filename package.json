@@ -3,22 +3,28 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start --port=3001",
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.2.32",
     "antd": "^4.23.6",
     "dayjs": "^1.11.6",
     "jotai": "^2.0.4",
+    "negotiator": "^0.6.3",
     "next": "^13.4.0",
+    "next-intl": "^2.14.0-beta.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
     "sharp": "^0.32.1",
     "zustand": "^4.3.8"
   },
   "devDependencies": {
+    "@types/negotiator": "^0.6.1",
     "@types/node": "^18.16.3",
     "@types/react": "^18.2.5",
     "eslint": "^8.39.0",

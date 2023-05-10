@@ -8,15 +8,13 @@ const WaterfallFont = Waterfall({
   variable: '--font-waterfall',
 });
 
-export default function RootLayout({ children }: any) {
-
+export default function RootLayout({ children, params: { lang } }: any) {
   return (
-    <html lang='en'>
+    <html lang={lang}>
       <head>
         <title>Next.js</title>
       </head>
-      <body className={WaterfallFont.variable}>{children}
-      </body>
+      <body className={WaterfallFont.variable}>{children}</body>
     </html>
   );
 }
