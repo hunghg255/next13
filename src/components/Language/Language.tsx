@@ -1,6 +1,6 @@
 'use client'
 
-import { i18n } from 'src/i18n/i18n-config';
+import { i18n } from 'locales';
 import Link from 'next/link';
 import { usePathname, useRouter, } from 'next/navigation';
 import React from 'react';

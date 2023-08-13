@@ -10,26 +10,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.2.32",
-    "antd": "^4.23.6",
-    "dayjs": "^1.11.6",
-    "jotai": "^2.0.4",
-    "negotiator": "^0.6.3",
-    "next": "^13.4.0",
-    "next-intl": "^2.14.0-beta.4",
+    "antd": "^4.24.13",
+    "dayjs": "^1.11.9",
+    "jotai": "^2.3.1",
+    "next": "^13.4.13",
+    "next-intl": "^2.19.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "server-only": "^0.0.1",
-    "sharp": "^0.32.1",
-    "zustand": "^4.3.8"
+    "sharp": "^0.32.4",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.1",
-    "@types/node": "^18.16.3",
-    "@types/react": "^18.2.5",
-    "eslint": "^8.39.0",
-    "eslint-config-next": "^13.4.0",
-    "sass": "^1.57.1",
-    "typescript": "^5.0.4"
+    "@types/node": "^18.17.5",
+    "@types/react": "^18.2.20",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.13",
+    "sass": "^1.65.1",
+    "typescript": "^5.1.6"
   }
 }

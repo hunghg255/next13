@@ -3,10 +3,10 @@ import { redirect } from 'next/navigation';
 // import { usePost } from '../src/store/post';
 import styles from './index.module.scss';
 import Hello from '@components/Hello/Hello';
-import { Locale } from 'src/i18n/i18n-config';
 import Language from '@components/Language/Language';
 import Link from 'next/link';
-import { getLocaleCommon } from 'src/i18n/locales/get-common';
+import { getLocaleCommon } from 'locales/locales/get-common';
+import { Locale} from 'locales/index';
 
 // export const revalidate = 60;
 
