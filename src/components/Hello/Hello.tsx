@@ -10,9 +10,7 @@ import { useHydrateAtoms } from 'jotai/utils';
 const Hello = () => {
   const profileSsr = {name: 'HUNG'};
 
-  //@ts-expect-error
   useHydrateAtoms([[atomProfile, profileSsr]]);
-
 
   const { profile, setProfile } = useProfileStore();
 
